@@ -31,7 +31,8 @@ twine upload dist/*
 rm -rf dist build *.egg-info \
 && python setup.py sdist bdist_wheel  \
 && twine check dist/* \
-&& twine upload dist/*
+&& twine upload dist/* \
+&& rm -rf dist build *.egg-info
 
 
 ## 下载测试
@@ -73,7 +74,7 @@ setup(
 
     # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
-        "Programming Language :: Python :: 3.7.0"
+        "Programming Language :: Python :: 3.7"
     ],
 
     packages=find_packages(),
