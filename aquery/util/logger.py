@@ -5,7 +5,7 @@ import logging
 logger = logging.Logger("aquery")
 
 formatter = logging.Formatter(
-    fmt="[%(name)s] %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s",
+    fmt="[%(name)s] %(levelname)s: %(message)s",
     datefmt="%Y-%m%d %H:%m:%S"
 )
 
