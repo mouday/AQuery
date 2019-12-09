@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from aquery.Iquery import IQuery
+from aquery.iquery import IQuery
 from aquery.handler.cursor_handler import CursorHandler
-from aquery.handler.data_handler import DataHandler
 from aquery.handler.param_handler import ParamHandler
 from aquery.handler.sql_handler import SqlDataHandler
 
